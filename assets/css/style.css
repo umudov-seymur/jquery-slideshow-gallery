@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f3f4;
+}
+
+/* Slider Styles */
+
+.slider {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider .slider-wrapper .slider-item img {
+  min-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider .slider-counter {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  padding: 16px;
+}
+
+.slider .slider-caption {
+  text-align: center;
+  background-color: #222;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.slider .slider-button-prev,
+.slider .slider-button-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  transition: all 0.3s;
+}
+
+.slider .slider-button-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .slider-button-prev:hover,
+.slider .slider-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider .slider-items {
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.slider-items > div[class^="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.slider .slider-items .slider-image {
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+
+.slider .slider-items .slider-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.slider .slider-items .slider-image.active,
+.slider .slider-items .slider-image:hover {
+  opacity: 1;
+}
